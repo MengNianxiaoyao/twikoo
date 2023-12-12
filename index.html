@@ -5,13 +5,9 @@
 </head>
 
 <body>
-  <div>
-    <button onclick="Vercel()">Vercel部署</button>
-  </div>
-  <br>
-  <div>
-    <button onclick="Netlify()">Netlify部署</button>
-  </div>
+  <div><button onclick="Vercel()">Vercel部署</button></div><br>
+  <div><button onclick="Netlify()">Netlify部署</button></div>
+
   <script type="text/javascript">
     function Vercel(){
       location.href = '/api/index'
@@ -20,6 +16,7 @@
       location.href = '/.netlify/functions/twikoo'
     }
   </script>
+
 </body>
 
 </html>
