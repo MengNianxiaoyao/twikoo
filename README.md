@@ -2,6 +2,8 @@
 
 ## 部署
 
+`Vercel`：请查看 [Vercel 部署](https://twikoo.js.org/backend.html#vercel-部署)
+
 `Netlify`：请查看 [Netlify 部署](https://twikoo.js.org/backend.html#netlify-部署)
 
 ## 使用
