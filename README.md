@@ -6,7 +6,7 @@
 
 ## 使用
 
-`Vercel`：直接使用链接
+`Vercel`：链接后缀添加`/api/index`
 
 `Netlify`：链接后缀添加`/.netlify/functions/twikoo`
 
