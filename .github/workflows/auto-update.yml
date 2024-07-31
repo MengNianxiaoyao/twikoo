@@ -1,0 +1,30 @@
+name: Update Packages
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC 21:00 -> CST (China) 5:00
+    - cron: '0 21 * * 4'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Install npm-check-updates
+        run: npm install -g npm-check-updates
+
+      - uses: actions/checkout@v4
+
+      - name: Update packages
+        run: ncu -u
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@main
+        with:
+          author_name: github-actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: 'Update packages'
+          add: '.'
