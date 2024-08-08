@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # UTC 21:00 -> CST (China) 5:00
-    - cron: '0 21 * * 4'
+    - cron: '0 21 * * 2,4,7'
 
 jobs:
   build:
